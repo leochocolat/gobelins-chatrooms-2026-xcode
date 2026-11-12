@@ -8,10 +8,13 @@
 import SwiftUI
 
 @main
-struct Gobelins_Chatrooms_2026App: App {
+struct HelloWorldApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+        #if os(macOS)
+        .windowStyle(.hiddenTitleBar)
+        #endif
     }
 }
